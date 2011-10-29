@@ -20,26 +20,28 @@ Feel free to contribute your compatibility layers for your favourites Django app
 
 Grappelli-fit works by overriding templates and static files for differents project, so the installation is pretty straight forward:
 
-    STATICFILES_DIRS = (
-       '/path/to/grappelli/static/',
-       '/path/to/grappellifit/static/',
-    )
+```python
+STATICFILES_DIRS = (
+   '/path/to/grappelli/static/',
+   '/path/to/grappellifit/static/',
+)
 
-    TEMPLATE_DIRS = (
-        '/path/to/project/templates/',
-        '/path/to/grappelli/templates/',
-        '/path/to/grappellifit/templates/',
-    )
+TEMPLATE_DIRS = (
+    '/path/to/project/templates/',
+    '/path/to/grappelli/templates/',
+    '/path/to/grappellifit/templates/',
+)
 
-    INSTALLED_APPS = (
-        # ...
-        'contrib.grappelli',
-        'contrib.grappellifit',
-        'django.contrib.admin',
-        'modeltranslation',
-        'rosetta',
-        # ...
-    )
+INSTALLED_APPS = (
+    # ...
+    'contrib.grappelli',
+    'contrib.grappellifit',
+    'django.contrib.admin',
+    'modeltranslation',
+    'rosetta',
+    # ...
+)
+```
 
 # Credits
 
